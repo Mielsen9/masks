@@ -1,0 +1,26 @@
+@use '../utils/mixins' as *;
+@use '../utils/vars' as *;
+@use '../utils/containers' as *;
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.header__nav {
+  @include tablet {
+    display: none;
+  }
+}

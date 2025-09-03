@@ -1,0 +1,42 @@
+@use '../utils/mixins' as *;
+
+.reasons {
+  background-color: var(--color-fon);
+  &__container {
+    display: flex;
+    justify-content: center;
+  }
+  &__img {
+    width: 40%;
+    height: 100%;
+    border-radius: 20px;
+    img {
+      border-radius: 20px 20px 20px 0;
+      height: auto;
+    }
+    @include tablet {
+      display: none;
+    }
+  }
+  &__content {
+    width: 60%;
+    padding-left: 70px ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include tablet {
+      width: 100%;
+      padding: 20px ;
+    }
+  }
+  &__text {
+    margin: 20px 0;
+  }
+  &__img {
+
+  }
+  &__img {
+
+  }
+}

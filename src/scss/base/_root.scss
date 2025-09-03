@@ -1,0 +1,22 @@
+:root {
+  --container-width: 1140px;
+  --container-padding: 15px;
+
+  --font-main: Open Sans ,sans-serif;
+  --font-titles: Rubik ,sans-serif;
+  --font-size: 16px;
+
+  --page-bg: #fff;
+  --text-color: #000;
+
+  --color-dark: #0b1437;
+  --color-light-gray: #f7f9fc;
+  --color-primary: #2954d6;
+  --color-accent: #f0b429;
+  --color-text: #4b4b4b;
+  --color-fon: #F7FDFB;
+}
+.dark {
+  --page-bg: #252526;
+  --text-color: #fff;
+}

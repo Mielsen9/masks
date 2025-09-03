@@ -1,0 +1,43 @@
+@use '../utils/mixins' as *;
+
+.footer {
+	background-color: var(--color-fon);
+  color: var(--color-text);
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    @include mobile {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  &__nav__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  &__social__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+  }
+  &__text {
+    width: 33.33%;
+    p {
+      margin-top: 20px;
+    }
+    @include mobile {
+      width: 80%;
+    }
+  }
+  &__copyright {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid gray;
+  }
+}
+

@@ -1,0 +1,19 @@
+@use '../utils/mixins' as *;
+
+.certification {
+  padding: 70px 0;
+  background-color: var(--color-fon);
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @include mobile {
+    flex-direction: column;
+      gap: 10px;
+    }
+    span {
+      width: 150px;
+      border-top: 1px solid var(--color-accent);
+    }
+  }
+}

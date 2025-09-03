@@ -1,0 +1,39 @@
+@use '../utils/mixins' as *;
+
+.reviews {
+  padding-top: 20px;
+  background: linear-gradient(
+      to bottom,         /* напрямок */
+      var(--color-fon) 80%,   /* перші 50% */
+      transparent 20%   /* другі 50% */
+  );
+  &__container {
+    display: flex;
+    li {
+      height: 400px;
+      width: 33.33%;
+      box-sizing: border-box;
+      padding: 30px;
+      margin: 20px;
+      background-color: white;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      justify-content: space-between;
+    }
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      li {
+        width: 80%;
+
+      }
+    }
+  }
+}
+.review__item {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}

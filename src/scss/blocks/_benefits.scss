@@ -1,0 +1,37 @@
+@use '../utils/mixins' as *;
+
+.benefits {
+  padding: 70px 0;
+  background-color: var(--color-fon);
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    li {
+      display: flex;
+      align-items: start;
+      justify-content: center;
+      height: 180px;
+      width: 270px;
+    }
+    @include tablet {
+      justify-content: space-around;
+    }
+  }
+  &__img {
+
+  }
+  &__text {
+    padding: 0 20px;
+    h5 {
+      line-height: 20px;
+    }
+    p {
+      font-weight: 400;
+      font-size: 15px;
+      color: var(--color-text);
+      line-height: 1.4;
+    }
+  }
+}

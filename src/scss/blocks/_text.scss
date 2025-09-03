@@ -1,0 +1,21 @@
+.text {
+  padding: 120px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__container {
+    height: 220px;
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    p {
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+    }
+  }
+}

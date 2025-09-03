@@ -1,0 +1,36 @@
+@use '../utils/function' as *;
+
+.title-1 {
+	margin: 10px 0;
+	font-size: fun-adaptiv-rem(72, 50);
+	font-weight: 700;
+	font-family: var(--font-titles), sans-serif;
+}
+
+.title-2 {
+	font-size: 48px;
+	font-weight: 700;
+	font-family: var(--font-titles), sans-serif;
+}
+
+.title-3 {
+	margin: 1em 0 0.5em;
+	font-size: 26px;
+	font-weight: 700;
+	font-family: var(--font-titles), sans-serif;
+}
+
+.title-4 {
+	margin: 1em 0 0.5em;
+	font-size: 18px;
+	font-weight: 700;
+	font-family: var(--font-titles), sans-serif;
+}
+.title-5 {
+  font-family: OpenSans, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--color-dark);
+  margin-bottom: 10px;
+  line-height: 15px;
+}
